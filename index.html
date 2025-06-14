@@ -1,40 +1,41 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/b0571f3a4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Center</title>
 </head>
 <body>
      <!-- header section -->
       <header>
-        <div>
+        <div class="horizontal">
             <!-- welcome text -->
             <div>
-                <p>Welcome to a professional health center</p>
-            </div>
+                <p>Welcome to a professional health center</p>            </div>
 
             <!-- contact -->
-             <div>
-                <p><span><i class="fa-solid fa-phone"></i></span>010-060-016</p>
-                <p><span><i class="fa-solid fa-calendar-week"></i></span>6:00AM - 10:00PM (Mon-Fri)</p>
-                <p><span><i class="fa-solid fa-envelope"></i>info@company.com</span></p>
+             <div class="horizontal" id="contact">
+                <p><span><i class="fa-solid fa-phone fontspace"></i></span>010-060-016</p>
+                <p><span><i class="fa-solid fa-calendar-week fontspace"></i></span>6:00AM - 10:00PM (Mon-Fri)</p>
+                <p><span><i class="fa-solid fa-envelope fontspace"></i>info@company.com</span></p>
              </div>
-
-             <div>
+        </div>
+        <div class="horizontal">
+            <div>
                 <h2>Health Center</h2>
-             </div>
+            </div>
 
              <div>
                 <nav>
-                    <ul>
+                    <ul class="horizontal">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Doctors</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Make an Appointment</a></li>
+                        <li id="makeAppointmentbtn"><a href="#">Make an Appointment</a></li>
                     </ul>
                 </nav>
              </div>
@@ -44,54 +45,56 @@
         <!-- main section  -->
         <main>
             <!-- Hero section -->
-             <section>
+             <section id="heroImage">
                 <img src="./images/slider3.jpg" alt="">
-                <p>pellentesque nec libero nisi</p>
-                <h1>Your Health Benefits</h1>
-                <button>Read Stories</button>
+                <div id="heroText">
+                    <p>pellentesque nec libero nisi</p>
+                    <h1>Your Health Benefits</h1>
+                    <button>Read Stories</button>
+                </div>
              </section>
 
             <!-- Health Center -->
              <section>
-                <div>
-                    <div>
+                <div id="healthCenter">
+                    <!-- Health center text -->
+                    <div id="healthImage">
                         <img src="./images/about-bg.jpg" alt="">
                     </div>
-                    <!-- Health center text -->
-                    <div>
-                        
-                        <h2>Welcome to Your Health Center</h2>
+                    <div id="healthText">
+                        <h2>Welcome to Your <span id="highlight-h">H</span>ealth Center</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
                             ut aliquip ex ea commodo consequat.
                         </p>
                         <!-- Dr neil section -->
-                        <div>
-                            <img src="./images/author-image.jpg" alt="">
-                            <h2>Dr. Neil Jackson</h2>
-                            <p>General Principal</p>
+                        <div id="healthTextNeil">
+                            <div> <img src="./images/author-image.jpg" alt="">
+                            <div>
+                                <h3>Dr. Neil Jackson</h3>
+                                <p>General Principal</p>
+                            </div>
                         </div>
-                    
                     </div>
+        
                 </div>
              </section>
 
             <!-- Doctor Section -->
             <section>
-                <div>
-                    <div>
-                        <h2>Our Doctors</h2>
-                    </div>
+                    <h2>Our Doctors</h2>  
 
                     <div>
-                        <!-- Photo 1 -->
-                        <img src="./images/team-image1.jpg" alt="doctors">
-
+                        <!-- photo 1 div -->
                         <div>
-                            
                             <div>
-                                 <h2>Nate Baston</h2>
+                                <!-- Photo 1 -->
+                                <img src="./images/team-image1.jpg" alt="doctors">
+                            </div>
+
+                            <div>
+                                <h2>Nate Baston</h2>
                                 <p>General Principal</p>
                             </div>
 
@@ -99,12 +102,15 @@
                                 <p><span><i class="fa-solid fa-phone"></i></span>010-060-016</p>
                                 <p><span><i class="fa-solid fa-envelope"></i>info@company.com</span></p>
                             </div>
+
                         </div>
 
-                    <div>
                         <!-- photo 2 -->
-                        <img src="./images/team-image2.jpg" alt="doctors">
                         <div>
+                            <div>
+                                <img src="./images/team-image2.jpg" alt="doctors">
+                            </div>
+
                             <div>
                                 <h2>Jason Stewart</h2>
                                 <p>Pregnancy</p>
@@ -115,11 +121,13 @@
                                 <p><span><i class="fa-solid fa-envelope"></i>info@company.com</span></p>
                             </div>
                         </div>
-                        
-                    </div>
-                    <!-- photo 3 -->
-                        <img src="./images/team-image3.jpg" alt="doctors">
+                
+                        <!-- photo 3 -->
                         <div>
+                            <div>
+                                <img src="./images/team-image3.jpg" alt="doctors">
+                            </div>
+                        
                             <div>
                                 <h2>Miasha Nakahara</h2>
                                 <p>Cardiology</p>
@@ -130,75 +138,72 @@
                                 <p><span><i class="fa-solid fa-envelope"></i>info@company.com</span></p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </section>
 
             <!-- Latest News Section -->
             <section>
+                <h2>Latest News</h2>
+                <!-- News 1 -->
                 <div>
-                    <h2>Latest News</h2>
-                    <!-- News 1 -->
                     <div>
-                        <img src="/images/news-image1.jpg" alt="">
                         <div>
-                            <div>
-                                <h3>March 08,2018</h3>
-                                <h2>About Amazing Technology</h2>
-                                <p>
+                            <img src="/images/news-image1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>March 08,2018</h3>
+                            <h2>About Amazing Technology</h2>
+                            <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-
-                            <div>
-                                <img src="./images/author-image.jpg" alt="">
-                                <h3>Jeremie carlson</h3>
-                                <p>CEO/Founder</p>
-                            </div>
+                            </p>
                         </div>
-                        
+                        <div>
+                            <img src="./images/author-image.jpg" alt="">
+                            <h3>Jeremie carlson</h3>
+                            <p>CEO/Founder</p>
+                        </div>
                     </div>
 
                     <!-- News 2 -->
                     <div>
                         <div>
-                            <div>
-                                <h3>February 20,2018</h3>
-                                <h2>Introducing a new healing process</h2>
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
-
-                            <div>
-                                <img src="./images/author-image.jpg" alt="">
-                                <h3>Jason Stewart</h3>
-                                <p>General Director</p>
-                            </div>
+                            <img src="./images/news-image2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>February 20,2018</h3>
+                            <h2>Introducing a new healing process</h2>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./images/author-image.jpg" alt="">
+                            <h3>Jason Stewart</h3>
+                            <p>General Director</p>
                         </div>
                     </div>
 
                     <!-- News 3 -->
                     <div>
-                      <div>
-                            <div>
-                                <h3>January 27,2018</h3>
-                                <h2>Review Annual Meeting Research</h2>
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                            </div>
+                        <div>
+                            <img src="./images/news-image3.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>January 27,2018</h3>
+                            <h2>Review Annual Meeting Research</h2>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
 
-                            <div>
-                                <img src="./images/author-image.jpg" alt="">
-                                <h3>Andrio Abero</h3>
-                                <p>Online Advertising</p>
-                            </div>
+                        <div>
+                            <img src="./images/author-image.jpg" alt="">
+                            <h3>Andrio Abero</h3>
+                            <p>Online Advertising</p>
                         </div>
                     </div>
                 </div>
@@ -210,33 +215,49 @@
                     <img src="./images/appointment-image.jpg" alt="">
                 </div>
 
+                <h2>Make an appointment</h2>
+
                 <div>
-                    <h2>Make an appointment</h2>
-                    <div>
-                         <form action="">
-                            <label for="name" id="name">Name</label>
-                            <input type="text" placeholder="full name">
+                    <form action="">
+                        <div>
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your Name" required> 
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
 
-                            <label for="date" id="date">Select date</label>
-                            <input type="date">
+                        <div>
+                            <div>
+                                <label for="date">Date</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div>
+                                <label for="dept">Select Department</label>
+                                <select name="dept" id="date">
+                                    <option value="finance">Finance</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="medical">Medical</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <label for="number">Phone Number</label>
-                            <input type="number" placeholder="phone">
+                        <div>
+                            <label for="Numner">Phone Number</label>
+                            <input type="tel" id="number" placeholder="Your Phone Number" required>
+                        </div>
+                        <div>
+                            <label for="message">Additional messages</label>
+                            <textarea name="" id="message"></textarea>
+                        </div>
 
-                            <label for="message">Additional Message</label>
-                            <input type="text" placeholder="message">
-                            
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="email">
-
-                            <label for="sdepart">Select Department</label>
-                            <select name="sdepart" id="sdepart">
-                                <option value="ghealth">General Health</option>
-                                <option value="cardio">Cardiology</option>
-                                <option value="Prin">Principal</option>
-                            </select>
-                         </form>
-                    </div>
+                        <div>
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
                 </div>
             </section>
 
@@ -250,15 +271,14 @@
         <!-- footer section -->
         <footer>
            <div>
+                <!-- Contact Info -->
                 <div>
-                    <!-- Contact Info -->
                     <div>
                         <h2>Contact info</h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed do eiusmod
                         </p>
                     </div>
-
                     <div>
                         <p><span><i class="fa-solid fa-phone"></i></span>010-060-016</p>
                         <p><span><i class="fa-solid fa-envelope"></i>info@company.com</span></p>
@@ -272,10 +292,16 @@
                     </div>
 
                     <div>
+                        <div>
+                            <img src="./image/news-image.jpg" alt="">
+                        </div>
                         <h3>Amazing Technology</h3>
                         <p>March 08, 2018</p>
                     </div>
                     <div>
+                        <div>
+                            <img src="./images/newsimage.jpg" alt="">
+                        </div>
                         <h3>New Healing Process</h3>
                         <p>February 20, 2018</p>
                     </div>
@@ -286,11 +312,11 @@
                     <h3>
                         Opening Hour
                     </h3>
-
-                    <P>Monday - Friday 06:00AM - 10:00PM</P>
-                    <p>Saturday 09:00AM - 08:00PM </p>
-                    <p>Sunday Closed</p>
-
+                    <div>
+                        <P>Monday - Friday 06:00AM - 10:00PM</P>
+                        <p>Saturday 09:00AM - 08:00PM </p>
+                        <p>Sunday Closed</p>
+                    </div>
                     <!-- Social media icons -->
                     <div>
 
